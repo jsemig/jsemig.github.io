@@ -33,7 +33,7 @@ a {
 }
 
 nav {
-	background-color: dimgray;
+	background-color: #696969;
 }
 nav ul {
 	margin: 0;
@@ -52,33 +52,8 @@ nav ul a {
 	float: left;
 }
 nav ul a:hover {
-	color: lightgray;
+	color: #D3D3D3;
 }
-main {
-	overflow: auto;
-	padding-right: 3em;
-	background-color: #EFECCA;
-}
-main h2 {
-	font-size: 3em;
-	padding-top: 1em;
-}
-main p {
-	font-size: 1.5em;
-	font-family: 'Cabin Condensed', sans-serif;
-}
-div img {
-	width: 100%;
-	max-width: 225px; 
-}
-
-main img {
-	margin-right: 1.875em;
-	width: 100%;
-	max-width: 400px; 
-	float: left;
-}
-
 footer {
 	clear: both;
 	padding: 2em 0;
@@ -131,53 +106,13 @@ footer {
 	}
 }
 
-/* media queries */
-/* adjust "discover" box for smaller width */
-@media only screen and (min-width: 702px) and (max-width: 866px) { main h2 {
-font-size: 2.5em;
-padding-top: 0em; }
-main p {
-font-size: 1.5em;
-font-family: 'Cabin Condensed', sans-serif; }
-}
 
-/* Mobile Landscape Screen Sizes */
-/* pixel range: 480-767px */
-@media only screen and 
-	(min-width: 480px) and (max-width: 767px)  {
-
-	.col-1-2,
-	.col-2 {
-		width: 44%;
-	}
-	.col-1-4,
-	.col-3,
-	.col-4 {
-		width: 92%;
-	}
-
-}
-
-/* adjust "discover" box again and change nav layout */ 
 @media only screen and (max-width: 701px) 
 {
-	main h2 
-	{
-		font-size: 2em;
-		padding-top: 0em; 
-	}
-	main p 
-	{
+	body{
 		font-size: 1.2em;
-		font-fa2mily: 'Cabin Condensed', sans-serif; 
 	}
-	main img 
-	{
-		width: auto;
-		max-width: auto; 
-		float: left;
-		margin-right: 1.875em;
-	}
+	
 	nav ul a 
 	{
 		display: block; 
@@ -206,9 +141,27 @@ font-family: 'Cabin Condensed', sans-serif; }
 	}
 }
 
-/* Mobile portrait Screen Sizes */
-/* pixel range: <=479px */
+
+@media only screen and 
+	(min-width: 480px) and (max-width: 701px)  {
+
+	.col-1-2,
+	.col-2 {
+		width: 44%;
+	}
+	.col-1-4,
+	.col-3,
+	.col-4 {
+		width: 92%;
+	}
+
+}
+
+
 @media only screen and (max-width: 479px) {
+	body{
+		font-size: 1.5em;
+	}
 	[class*='col-'] {
 		width: 100%;
 		float: none;
