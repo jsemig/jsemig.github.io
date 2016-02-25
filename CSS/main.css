@@ -115,14 +115,7 @@ footer {
 
 @media only screen and (min-width: 702px) 
 {
-	header 
-	{
-		background: url(../img/boston-1200.jpg) no-repeat;
-		width: 1200px;
-		height: 218px;
-		font-family: 'Cabin Condensed', sans-serif; 
-		color: #fff;
-	}
+
 	header h1 
 	{
 		padding: 0.5em;
