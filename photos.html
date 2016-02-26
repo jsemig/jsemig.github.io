@@ -4,7 +4,17 @@
     <meta charset="utf-8">
 	<title>Emig.co</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/picture.css">
     <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:500' rel='stylesheet' type='text/css'>
+    <script src="JS/jquery-2.2.1.min.js"></script>
+    <script src="JS/grids.min.js"></script>
+    <script src="JS/picturefill.min.js"></script>
+    <script> jQuery(function($) 
+        {
+            $('.col-1-2').responsiveEqualHeightGrid(); 
+            document.createElement( "picture" );
+        });
+    </script>
 </header>
 <body>
     <div class="wrapper">
@@ -18,7 +28,29 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-2">
+            <div class="row">
+                <div class="col-4">
+                    <picture>
+                        <source srcset="img/ocean_900.png" media="(min-width:800px)">
+                        <source srcset="img/ocean_600.png" media="(min-width:600px)">
+                        <img srcset="img/ocean_300.png" alt="Maui" > 
+                    </picture>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-4">
+                    <img src="img/fire_works.png" alt="Fire Works">
+                </div>
+                <div class="col-1-4">
+                    <img src="img/fire_works.png" alt="Fire Works"> 
+                </div>
+                <div class="col-1-4">
+                    <img src="img/fire_works.png" alt="Fire Works"> 
+                </div>
+                <div class="col-1-4">
+                    <img src="img/fire_works.png" alt="Fire Works"> 
+                </div>
+            </div>
         </div>
     </div>
     <footer>

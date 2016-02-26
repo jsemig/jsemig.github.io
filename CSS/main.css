@@ -21,9 +21,15 @@ h5,
 h6 {
 	font-family: 'Cabin Condensed', sans-serif;
 }
+
+h2{
+	text-align: center;
+}
+
 a {
 	color: #2772B0;
 }
+
 .wrapper {
 	width: 97%;
 	max-width: 1200px;
@@ -62,6 +68,9 @@ footer {
 	text-align: center;
 }
 
+img{
+    width: 100%;
+}
 
 
 /* grid system */
@@ -141,7 +150,6 @@ footer {
 	}
 }
 
-
 @media only screen and 
 	(min-width: 480px) and (max-width: 701px)  {
 
@@ -156,7 +164,6 @@ footer {
 	}
 
 }
-
 
 @media only screen and (max-width: 479px) {
 	body{
