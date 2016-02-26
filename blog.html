@@ -23,29 +23,38 @@
         </div>
         <div class="row">
             <div class="col-1-4">
-				<h3 class="blog_date">12-02-2016</h3>
+                <h3 class="blog_date">18-02-2015</h3>
+            </div>
+            <div class="col-3">
+                <h3>Our first Load balancer</h3>
+                <p>After two months of work, our website finally started getting some traffic, and of course with traffic comes problems. At this point we were running a single instance, which handled all traffic and was hosting the database. We started to experience down times on a weekly basis and never at convenient times.  With some experience from a previous project, I suggested adding two servers, one dedicated for the database and another app server that would act as our failover. This idea wasn’t really popular it would not only triple our cost, it would also require 3 times the maintenance. But after many meeting the owner of the company gave me the approval to start building the new setup.</p>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-4">
+				<h3 class="blog_date">12-02-2015</h3>
 			</div>
 			<div class="col-3">
-		    	<h3>Near Boston</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>	
+		    	<h3>EC2 (Amazon Elastic Compute Cloud)</h3>
+                <p>I’m assuming most people start with this service most people start out with, as it can resemble the classic “server”. You click on the type of computer you want with a designated operation system and you ready to launch you new server. You get a public IP and you start hosting your service with the main difference is you now pay per hour, not month. Once you reached the limit of that unit you can just upgrade to a larger instance with a few simple clicks in the web console. And this is where most people stay / get trapped. The fact that you pay per hour, not per month should be the first hint that you are properly not utilizing this service to it’s full potential. Instead, starting thinking of an EC2 as a temporary resource you only utilize when you actually need it.</p>	
 		    </div>
         </div>
         <div class="row">
             <div class="col-1-4">
-				<h3 class="blog_date">05-02-2016</h3>
+				<h3 class="blog_date">05-02-2015</h3>
 			</div>
 			<div class="col-3">
-		    	<h3>Near Boston</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>	
+		    	<h3>AWS Cloudfront</h3>
+                <p>Once we moved all our static content from the web servers to S3 our applications were lighter and we thought also faster. However we quickly realized that S3 is region specific and not always the fastest storage read service. So we decided to give cloudfront a try and the results were amazing. All cloudfront is cache the any object you assign to it. In addition we learned that cloudfront even has access points in outside the traditional aws regions (Taiwan for example which was huge for us). There is one downside, you will need to start using version files names of all your now cached static content, because cloudfront won’t know when you update your content. We solved this by putting a simple time stamp on all our files between the file name and extension..</p>	
 		    </div>
         </div>
         <div class="row">
             <div class="col-1-4">
-				<h3 class="blog_date">02-02-2016</h3>
+				<h3 class="blog_date">02-02-2015</h3>
 			</div>
 			<div class="col-3">
-		    	<h3>Near Boston</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>	
+		    	<h3>AWS pricing</h3>
+                <p>AA little over 3 years ago during a hackathon I was introduced to cloud computing. At the time I had little knowledge of what cloud computing really was or the potential it had. All hackers were given a voucher for free services and were told to go start building something on the cloud. During the competition, I created a server running Ubuntu (hosting a service I wrote), but also realizing that this really isn’t any different to traditional server I work with at work.So I started reading more about cloud services what their capabilities and now manage a dozen e commerce websites on all hosted on Amazon Wed Services.</p>	
 		    </div>
         </div>
     </div>
