@@ -1,7 +1,9 @@
 /* My partial file imports */
 @import "blog"; 
 @import "variables";
-
+@import "compass/css3";
+@import "compass/reset.scss";
+@import "compass/layout.scss";
 
 /* Border box declaration */
 html {
@@ -15,8 +17,7 @@ html {
 
 /* My nested elements */
 nav {
-	background-color: #696969;
-
+	background-color: $text_color;
  	ul {
 		margin: 0;
 		padding: 0;
@@ -34,7 +35,7 @@ nav {
 			float: left;
 		
 			&:hover {
-				color: #D3D3D3;
+				color: lighten($text_color, 50);
 			}
 		}
 	}
@@ -44,17 +45,46 @@ body {
 	font-family: Arial, Geneva, sans-serif;
 	background-color: $background_color;
 }
+
+/* My custom mixin */
+@mixin std-heading {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Cabin Condensed', sans-serif;
+	@include std-heading;
 }
 
 h2{
+	@include std-heading;
 	text-align: center;
+}
+
+
+/* My Extend */
+.main_text{
+
+	text-align: center; 
+	color: $text_color;
+	font-size: 2em;
+		
+}
+
+.cool_text{
+	@extend .main_text;
+	font-family: 'Lobster', sans-serif;
+	@include single-text-shadow;
+	/* My if else*/
+	@if 1 == random(2){
+		color: lighten($text_color, 50);
+	}
+	@else {
+		color: darken($text_color, 50);
+	}	
 }
 
 a {
@@ -69,9 +99,8 @@ a {
 	background-color: $background_color;
 }
 
-
-
 footer {
+	@include sticky-footer(72px);
 	clear: both;
 	padding: 2em 0;
 	margin: 3em 0;

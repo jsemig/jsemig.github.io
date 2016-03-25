@@ -1,5 +1,5 @@
 
-css_dir = "CSS" # by Compass.app 
+css_dir = "CSS2" # by Compass.app 
 sass_dir = "sass" # by Compass.app 
 images_dir = "images" # by Compass.app 
 output_style = :expanded # by Compass.app 
