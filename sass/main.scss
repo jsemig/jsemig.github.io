@@ -2,6 +2,7 @@
 @import "blog"; 
 @import "variables";
 @import "compass/css3";
+@import "compass/typography/links/hover-link";
 
 /* Border box declaration */
 html {
@@ -15,6 +16,8 @@ html {
 
 /* My nested elements */
 nav {
+	/* My Compass Opacity */
+	@include opacity(.8);
 	background-color: $text_color;
  	ul {
 		margin: 0;
@@ -38,7 +41,6 @@ nav {
 		}
 	}
 }
-
 body {
 	font-family: Arial, Geneva, sans-serif;
 	background-color: $background_color;
@@ -65,16 +67,22 @@ h2{
 
 /* My Extend */
 .main_text{
-
+	
 	text-align: center; 
 	color: $text_color;
-	font-size: 2em;
-		
+	font-size: 1.5em;
+	a {
+		/* My Compass Hover-Link */
+		@include hover-link;
+		color: $text_color;
+	}		
 }
 
 .cool_text{
 	@extend .main_text;
+	font-size: 3em;
 	font-family: 'Lobster', sans-serif;
+	/* My Compass Text Shadow */
 	@include single-text-shadow;
 	/* My if else*/
 	@if 1 == random(2){
@@ -199,6 +207,9 @@ img{
 	.col-4 {
 		width: 92%;
 	}
+	.main_text, .cool_text{
+		font-size: 1.5em;
+	}
 
 }
 
@@ -211,5 +222,8 @@ img{
 		float: none;
 		margin-left: 0%;
 		margin-right: 0%;
+	}
+	.main_text, .cool_text{
+		font-size: 1em;
 	}
 }

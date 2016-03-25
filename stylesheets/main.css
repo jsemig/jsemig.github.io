@@ -7,12 +7,12 @@
 
 /* My Variables */
 /* Border box declaration */
-/* line 6, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/main.scss */
+/* line 11, ../sass/main.scss */
 *,
 *:before,
 *:after {
@@ -20,22 +20,25 @@ html {
 }
 
 /* My nested elements */
-/* line 16, ../sass/main.scss */
+/* line 18, ../sass/main.scss */
 nav {
+  /* My Compass Opacity */
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
   background-color: #696969;
 }
-/* line 18, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   overflow: auto;
 }
-/* line 24, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 nav ul li {
   font-family: 'Cabin Condensed', sans-serif;
 }
-/* line 27, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 nav ul a {
   color: #fff;
   text-decoration: none;
@@ -43,19 +46,19 @@ nav ul a {
   padding: 1em;
   float: left;
 }
-/* line 34, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 nav ul a:hover {
   color: #e9e9e9;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 body {
   font-family: Arial, Geneva, sans-serif;
   background-color: #fff;
 }
 
 /* My custom mixin */
-/* line 51, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 h1,
 h3,
 h4,
@@ -64,34 +67,46 @@ h6 {
   font-family: 'Cabin Condensed', sans-serif;
 }
 
-/* line 59, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 h2 {
   font-family: 'Cabin Condensed', sans-serif;
   text-align: center;
 }
 
 /* My Extend */
-/* line 66, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .main_text, .cool_text {
   text-align: center;
   color: #696969;
-  font-size: 2em;
+  font-size: 1.5em;
+}
+/* line 74, ../sass/main.scss */
+.main_text a, .cool_text a {
+  /* My Compass Hover-Link */
+  text-decoration: none;
+  color: #696969;
+}
+/* line 4, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+.main_text a:hover, .cool_text a:hover, .main_text a:focus, .cool_text a:focus {
+  text-decoration: underline;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .cool_text {
+  font-size: 3em;
   font-family: 'Lobster', sans-serif;
+  /* My Compass Text Shadow */
   text-shadow: 0px 0.25em 0.25em rgba(105, 105, 105, 0.5);
   /* My if else*/
   color: black;
 }
 
-/* line 87, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 a {
   color: #2772B0;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .wrapper {
   width: 97%;
   max-width: 1200px;
@@ -100,7 +115,7 @@ a {
   background-color: #fff;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 footer {
   clear: both;
   padding: 2em 0;
@@ -109,123 +124,133 @@ footer {
   text-align: center;
 }
 
-/* line 107, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 img {
   width: 100%;
 }
 
 /* grid system */
-/* line 114, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 [class*='col-'] {
   margin-left: 4%;
   float: left;
   min-height: 1px;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .col-1-2,
 .col-1-4 {
   width: 20%;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .col-2 {
   width: 44%;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .col-3 {
   width: 68%;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 .col-4 {
   width: 92%;
 }
 
 @media only screen and (min-width: 702px) {
-  /* line 142, ../sass/main.scss */
+  /* line 151, ../sass/main.scss */
   header h1 {
     padding: 0.5em;
     margin: 0;
   }
 
-  /* line 147, ../sass/main.scss */
+  /* line 156, ../sass/main.scss */
   header h1 a {
     color: #fff;
     text-decoration: none;
   }
 }
 @media only screen and (max-width: 701px) {
-  /* line 157, ../sass/main.scss */
+  /* line 166, ../sass/main.scss */
   body {
     font-size: 1.2em;
   }
 
-  /* line 161, ../sass/main.scss */
+  /* line 170, ../sass/main.scss */
   nav ul a {
     display: block;
     float: none;
     padding-left: 3.333333%;
   }
 
-  /* line 167, ../sass/main.scss */
+  /* line 176, ../sass/main.scss */
   nav li:nth-child(even) {
     width: 50%;
     float: right;
   }
 
-  /* line 172, ../sass/main.scss */
+  /* line 181, ../sass/main.scss */
   nav li:nth-child(odd) {
     width: 50%;
     float: left;
   }
 
-  /* line 177, ../sass/main.scss */
+  /* line 186, ../sass/main.scss */
   header h1 {
     padding: 100px 0 0 10px;
     margin: 0;
     font-size: 1.6em;
   }
 
-  /* line 182, ../sass/main.scss */
+  /* line 191, ../sass/main.scss */
   header h1 a {
     color: #fff;
     text-decoration: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 701px) {
-  /* line 192, ../sass/main.scss */
+  /* line 201, ../sass/main.scss */
   .col-1-2,
   .col-2 {
     width: 44%;
   }
 
-  /* line 196, ../sass/main.scss */
+  /* line 205, ../sass/main.scss */
   .col-1-4,
   .col-3,
   .col-4 {
     width: 92%;
   }
+
+  /* line 210, ../sass/main.scss */
+  .main_text, .cool_text, .cool_text {
+    font-size: 1.5em;
+  }
 }
 @media only screen and (max-width: 479px) {
-  /* line 205, ../sass/main.scss */
+  /* line 217, ../sass/main.scss */
   body {
     font-size: 1.5em;
   }
 
-  /* line 208, ../sass/main.scss */
+  /* line 220, ../sass/main.scss */
   [class*='col-'] {
     width: 100%;
     float: none;
     margin-left: 0%;
     margin-right: 0%;
+  }
+
+  /* line 226, ../sass/main.scss */
+  .main_text, .cool_text, .cool_text {
+    font-size: 1em;
   }
 }
