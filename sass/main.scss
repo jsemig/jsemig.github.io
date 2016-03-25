@@ -2,8 +2,6 @@
 @import "blog"; 
 @import "variables";
 @import "compass/css3";
-@import "compass/reset.scss";
-@import "compass/layout.scss";
 
 /* Border box declaration */
 html {
@@ -100,7 +98,6 @@ a {
 }
 
 footer {
-	@include sticky-footer(72px);
 	clear: both;
 	padding: 2em 0;
 	margin: 3em 0;
