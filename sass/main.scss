@@ -1,17 +1,48 @@
+/* My partial file imports */
+@import "blog"; 
+@import "variables";
+
+
 /* Border box declaration */
 html {
   box-sizing: border-box;
 }
-/* inherit border-box on all elements in the universe and before and after */
 *, 
 *:before, 
 *:after {
   box-sizing: inherit;
 }
 
+/* My nested elements */
+nav {
+	background-color: #696969;
+
+ 	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: auto;
+	
+		li {
+			font-family: 'Cabin Condensed', sans-serif;
+		}
+		a {
+			color: $background_color;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 1em;
+			float: left;
+		
+			&:hover {
+				color: #D3D3D3;
+			}
+		}
+	}
+}
+
 body {
 	font-family: Arial, Geneva, sans-serif;
-	background-color: white;
+	background-color: $background_color;
 }
 h1,
 h2,
@@ -35,31 +66,11 @@ a {
 	max-width: 1200px;
 	margin: 0 auto;
 	float: none;
-	background-color: #fff;
+	background-color: $background_color;
 }
 
-nav {
-	background-color: #696969;
-}
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	overflow: auto;
-}
-nav ul li {
-	font-family: 'Cabin Condensed', sans-serif;
-}
-nav ul a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 1em;
-	float: left;
-}
-nav ul a:hover {
-	color: #D3D3D3;
-}
+
+
 footer {
 	clear: both;
 	padding: 2em 0;
@@ -110,7 +121,7 @@ img{
 	}
 	header h1 a 
 	{
-		color: #fff;
+		color: $background_color;
 		text-decoration: none;
 	}
 }
@@ -145,7 +156,7 @@ img{
 	}
 	header h1 a 
 	{
-		color: #fff;
+		color: $background_color;
 		text-decoration: none; 
 	}
 }
