@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,yCAAyC;EACrC,aAAa;IACb,UAAU,EAAE,wCAAwC;IACpD,MAAM,EAAE,KAAK;AAIjB,gEAAgE;EAC5D,aAAa;IACb,UAAU,EAAE,uCAAuC;IACnD,MAAM,EAAE,KAAK;AAIjB,yCAA0C;EACtC,aAAa;IACb,UAAU,EAAE,uCAAuC;IACnD,MAAM,EAAE,KAAK",
-"sources": ["../sass/index.scss"],
-"names": [],
-"file": "index.css"
-}
