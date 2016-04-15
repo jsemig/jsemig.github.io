@@ -34,3 +34,9 @@ footer {
 	background:#cacaca;
 	box-shadow:0 7px 0 #cacaca,0 14px 0 #cacaca
 }
+
+
+.blog_date {
+  text-align: center;
+  font-family: 'Lobster', sans-serif; 
+}
