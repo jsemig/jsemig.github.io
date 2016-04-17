@@ -2,3 +2,7 @@
 .sass-cache
 start.html
 demo.html
+bower_components
+bower.json
+node_modules
+.bowerrc
