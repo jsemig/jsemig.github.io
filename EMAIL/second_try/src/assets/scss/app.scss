@@ -1,0 +1,13 @@
+@import 'settings';
+@import 'foundation';
+
+.callout h3{
+    color: $white;
+    text-align: center;
+}
+
+.footer {
+    font-size: .75em;
+    text-align: center;
+     color: $secondary-color;
+}
