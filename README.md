@@ -1,48 +1,34 @@
-# Foundation for Sites Template
+# DGMD E-27  Assignment 3 Foundation
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+**There are sites on this page, such as the resume which are not in linked in the navigation. There are not meant to be graded, just me starting on it for my final portfolio site**
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+## Website
 
-## Installation
+###Requirments: 
 
-To use this template, your computer needs:
+- Write your own content for the site. 
+	* Created a new site as a base for my future portfolio site.
+- Use Foundation's grid system to lay out the website.
+	* Done on all pages. 
+- Navigation:
+	* Decided to use the accordion menu feature for the small window
+- Styling:
+	* Visibility classes (used on idex page to remove callout in small window format)
+	* Callout on index page to inform site visitors this a work in progress
+	* Submit button on contact page. 
+- Form:
+	* The custom form is one the contact page (simple as I will remove it in final portfolio version)
+- REQUIRED JavaScript-based widget:
+	* Used Interchange on the index page to update main image beind displayed depending on site size. 
+- Other JavaScript-based widgets:
+	* Accordion used in Navigation 
+	* Off-Canvas used in Navigation
+	* Dropdown used in Navigation 
+- Sass
+ 	* jg
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+## Email
+The email folder with all of it's files can be found [here](https://github.com/jsemig/jsemig.github.io/tree/master/email_second_try). I did update some Sass. Email is a template for my current Amazon Alexa project for people signing up for the Beta. 
 
-### Using the CLI
 
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-bower install
-```
-
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
