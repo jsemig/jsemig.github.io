@@ -4189,5 +4189,11 @@ footer {
   text-align: center;
   font-family: 'Lobster', sans-serif; }
 
-h3 {
+h2,
+h3,
+h4 {
   text-align: center; }
+  h2 .main_title,
+  h3 .main_title,
+  h4 .main_title {
+    font-family: 'Lobster', sans-serif; }

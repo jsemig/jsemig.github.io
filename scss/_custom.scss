@@ -10,6 +10,11 @@ footer {
   font-family: 'Lobster', sans-serif; 
 }
 
-h3{
-    text-align: center
+h2,
+h3, 
+h4{
+    text-align: center;
+    .main_title{
+        font-family: 'Lobster', sans-serif; 
+    }
 }
