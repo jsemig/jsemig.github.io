@@ -18,45 +18,31 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="row">
-            <div class="col-4">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                    </ul>
-                </nav>
-            </div>
-        <div class="row">
-            <div class="col-4">
-                <h2>A few of my pictures</h2>
-            </div>      
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>    
+        <div class="pics-1">
+            <picture>
+                <source srcset="img/ocean_900.png" media="(min-width:800px)">
+                <source srcset="img/ocean_600.png" media="(min-width:600px)">
+                <img srcset="img/ocean_300.png" alt="Maui" > 
+            </picture>
         </div>
-            <div class="row">
-            <!-- This is my responsive image :) --> 
-                <div class="col-4">
-                    <picture>
-                        <source srcset="img/ocean_900.png" media="(min-width:800px)">
-                        <source srcset="img/ocean_600.png" media="(min-width:600px)">
-                        <img srcset="img/ocean_300.png" alt="Maui" > 
-                    </picture>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-4">
-                    <img src="img/nemo_300.png" alt="Fire Works">
-                </div>
-                <div class="col-1-4">
-                    <img src="img/puffer_300.png" alt="Fire Works"> 
-                </div>
-                <div class="col-1-4">
-                    <img src="img/sunset_300.png" alt="Fire Works"> 
-                </div>
-                <div class="col-1-4">
-                    <img src="img/fire_works.png" alt="Fire Works"> 
-                </div>
-            </div>
+        <div class="pics-2a">
+            <img src="img/nemo_300.png" alt="Fire Works">
+        </div>
+        <div class="pics-2b">
+            <img src="img/puffer_300.png" alt="Fire Works"> 
+        </div>
+        <div class="pics-2c">
+            <img src="img/sunset_300.png" alt="Fire Works"> 
+        </div>
+        <div class="pics-2d">
+            <img src="img/fire_works.png" alt="Fire Works"> 
         </div>
     </div>
     <footer>
