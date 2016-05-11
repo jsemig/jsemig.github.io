@@ -1,0 +1,23 @@
+
+
+@media only screen and (min-width: 701px){
+    #header_image{
+    background: url(../img/beach_1200x250.png) no-repeat; 
+    height: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 401px){
+    #header_image{
+    background: url(../img/beach_700x300.png) no-repeat; 
+    height: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #header_image{
+    background: url(../img/beach_400x391.png) no-repeat; 
+    height: 330px;
+    }
+}
+
