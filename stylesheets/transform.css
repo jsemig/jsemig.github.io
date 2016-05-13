@@ -1,0 +1,59 @@
+/* line 1, ../sass/transform.scss */
+.animations-1,
+.animations-2,
+.animations-3 {
+  margin-top: 10em;
+  text-align: center;
+  perspective: 200px;
+}
+
+/* line 10, ../sass/transform.scss */
+.cool_car {
+  margin: 0 auto;
+  height: 200px;
+  transform: translate(-200px, -200px);
+  transform: rotateY(45deg);
+  transition: all 1s ease-in-out .25s;
+}
+
+/* line 18, ../sass/transform.scss */
+.cool_car:hover {
+  transform: rotateY(-45deg);
+}
+
+@keyframes racing-left-right {
+  0% {
+    transform: translateX(50px);
+  }
+  70% {
+    transform: translateX(-500px);
+  }
+  80% {
+    transform: translateX(-450px);
+  }
+  95% {
+    transform: translateX(400px) rotate(-20deg);
+  }
+  96% {
+    transform: translateX(410px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(500px) rotate(0deg);
+  }
+}
+/* line 44, ../sass/transform.scss */
+.racing_car {
+  width: 100px;
+  animation-name: racing-left-right;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  /*animation-timing-function: cubic-bezier(.67,.01,.09,.97);*/
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+/* line 55, ../sass/transform.scss */
+#Capa_1:hover #head {
+  fill: #00356b;
+}
